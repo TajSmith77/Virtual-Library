@@ -1,5 +1,5 @@
 // import the Media class:
-const Account = require('./Media.js');
+const Media = require('./Media.js');
 // create your Movie class:
 class Movie extends Media {
     constructor(title, year, genre, director, duration, rating) {

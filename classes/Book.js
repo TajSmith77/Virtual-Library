@@ -1,5 +1,5 @@
 // import the Media class:
-require ('./Media')
+const Media = require('./Media.js');
 // create your Book class:
 class Book extends Media {
     constructor(title,year,genre,author, numPages, rating){
@@ -11,7 +11,7 @@ class Book extends Media {
     summary(){
         return `Title: ${this.title}, Author: ${this.author}, Year: ${this.year}, Page Count: ${this.numPages}, Genre: ${this.genre}, Rating: ${this.rating} `
     }
-    static highestRating(Book){
+    static highestRating(book){
             let highestRating = book[0];
             for(let i = 1; i < book.length; i++){
                 if(book.highestRating > highestRating.rating){
