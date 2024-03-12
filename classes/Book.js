@@ -1,7 +1,7 @@
 // import the Media class:
 require ('./Media')
 // create your Book class:
-class Book extends MediaCapabilities {
+class Book extends Media {
     constructor(title,year,genre,author, numPages, rating){
         super(title,year,genre)
         this.author=author;
