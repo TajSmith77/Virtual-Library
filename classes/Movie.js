@@ -9,13 +9,13 @@ class Movie extends Media {
         this.rating = rating;
     }
     summary() {
-        return `Title: ${this.title}, Director: ${this.director}, Year: ${this.year}, Genre: ${this.genre}, Duration: ${this.duration}, Rating: ${this.rating}`
+        return `Title: ${this.title}, Director: ${this.director}, Year: ${this.year}, Genre: ${this.genre}, Rating: ${this.rating}`
     }
     static longestMovie(movie) {
         let longestDuration = movie[0];
 
         for (let i = 1; i < movie.length; i++) {
-            if (movie[i].duration > longestDuration) {
+            if (movie[i].duration > longestDuration.duration) {
                 longestDuration = movie[i]
             }
         }

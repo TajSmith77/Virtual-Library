@@ -9,16 +9,16 @@ class Book extends Media {
         this.rating=rating
     }
     summary(){
-        return `Title: ${this.title}, Author: ${this.author}, Year: ${this.year}, Page Count: ${this.numPages}, Genre: ${this.genre}, Rating: ${this.rating} `
+        return `Title: ${this.title}, Author: ${this.author}, Year: ${this.year}, Page Count: ${this.numPages}, Genre: ${this.genre}, Rating: ${this.rating}`
     }
     static highestRating(book){
             let highestRating = book[0];
-            for(let i = 1; i < book.length; i++){
-                if(book.highestRating > highestRating.rating){
-                    return highestRating= book[i];
+            for(let i = 0; i <= book.length - 1; i++){
+                if(book[i].rating > highestRating.rating){
+                    highestRating = book[i];
                 }
             }
-            return highestRating
+            return highestRating;
     }
 }
 // don't change below
